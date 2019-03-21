@@ -1,0 +1,25 @@
+{
+  "name": "cyber_code_backend",
+  "version": "1.0.0",
+  "description": "The back-end Node and Express app to cybercode.dev",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stephenleachman/cyber_code_backend.git"
+  },
+  "author": "Stephen Leachman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stephenleachman/cyber_code_backend/issues"
+  },
+  "homepage": "https://github.com/stephenleachman/cyber_code_backend#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2",
+    "nodemailer": "^5.1.1"
+  }
+}

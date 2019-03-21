@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{!-- Meta --}}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  {{!-- Title --}}
+  <title>CyberCode | Client Login</title>
+  {{!-- Links --}}
+  <link rel="stylesheet" href="/public/css/bootstrap.css">
+  <link rel="stylesheet" href="/public/css/style.css">
+  <link rel="stylesheet" href="/public/css/animate.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+  {{!-- Favicon Links --}}
+  <link rel="apple-touch-icon" sizes="57x57" href="/public/assets/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/public/assets/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/public/assets/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/public/assets/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/public/assets/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/public/assets/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/public/assets/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/public/assets/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/public/assets/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/public/asset/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/public/assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/public/assets/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/public/assets/favicon/favicon-16x16.png">
+
+  {{!-- SEO --}}
+  <meta name="Description" content="Author: A.N. Author,
+    Illustrator: P. Picture, Category: Books, Price: $17.99,
+    Length: 784 pages">
+
+</head>
+
+<body id="loginPage">
+
+  {{!-- Man Nav --}}
+  <nav class="navbar navbar-expand navbar-dark bg-dark" id="mainNavBar">
+    <div class="container">
+      <a class="navbar-brand" href="/"><img src="/public/assets/company_logo_light.svg" height="27px" alt="Company Logo"></a>
+      <div class="float-right">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item mr-4 d-none d-sm-block active">
+            <a class="nav-link" href="/login"><i class="fas fa-user-alt mr-2"></i>Client Login</a>
+          </li>
+          <li class="nav-item slide-nave-toggle">
+            <div id="slideNavToggle">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="slide-menu bg-dark animated slideInRight d-none" id="slideMenu">
+    <ul class="nav mr-auto d-flex flex-column mt-5">
+      <li class="nav-item">
+        <a class="nav-link" href="/"><i class="fas fa-home mr-3"></i>Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/pricing"><i class="far fa-money-bill-alt mr-3"></i>Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/get_started"><i class="fas fa-flag-checkered mr-3 pr-1"></i>Get Started</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/contact"><i class="far fa-envelope mr-3 pr-1"></i>Contact</a>
+      </li>
+      <li class="nav-item mt-4 d-sm-none active">
+        <a class="nav-link" href="/login"><i class="fas fa-user-alt mr-3"></i>Client Login</a>
+      </li>
+    </ul>
+  </div>
+
+  <div id="contentWrap">
+   {{!-- CONTACT PAGE --}}
+    <div class="container">
+      <div class="row d-flex align-items-center animated fadeIn">
+        <div class="col-12">
+          <div class=" d-flex justify-content-center">
+            <div class="card shadow">
+              <div class="card-body">
+                <h1 class="text-center mb-3">Client Login</h1>
+                <form action="POST">
+                  <div class="form-group">
+                    <label for="userName" class="text-dark"><i class="fas fa-user mr-2"></i>Username</label>
+                    <input name="name" type="name" class="form-control" id="userName" aria-describedby="emailHelp" placeholder="Username" required>
+                  </div>
+                  <div class="form-group mb-0">
+                    <label for="password" class="text-dark"><i class="fas fa-lock mr-2"></i>Password</label>
+                    <div class="password-input">
+                      <input name="password" type="password" class="form-control" id="password" placeholder="Password" required>
+                      <i class="far fa-eye-slash password-eye"></i>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-end">
+                    <a class="nav-link" href="/contact">forgot password</a>
+                  </div>
+                  <div class="d-flex justify-content-center mt-3">
+                    <button id="submit" type="submit" class="btn btn-info text-light">LogIn</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+
+  
+  <script src="/public/js/jquery.min.js"></script>
+  <script src="/public/js/popper.min.js"></script>
+  <script src="/public/js/bootstrap.min.js"></script>
+  <script src="/public/js/main.js"></script>
+
+</body>
+</html>
