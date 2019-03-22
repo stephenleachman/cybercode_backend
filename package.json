@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/stephenleachman/cyber_code_backend.git"
+    "url": "git+https://github.com/stephenleachman/cybercode_backend.git"
   },
   "author": "Stephen Leachman",
   "license": "MIT",
