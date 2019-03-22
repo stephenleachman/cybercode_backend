@@ -68,8 +68,8 @@ app.post('/email_sent', (req, res) => {
       port: 587,
       secure: false, 
       auth: {
-        user: 'email.com', 
-        pass: 'password' 
+        user: '', 
+        pass: '' 
       },
       tls: {
         rejectUnauthorized:false
@@ -77,8 +77,8 @@ app.post('/email_sent', (req, res) => {
     });
 
     let mailOptions = {
-      from: '"CyberCode Contact" <email.com>', 
-      to: "email.com",
+      from: '"CyberCode Contact" <>', 
+      to: "stephen@cybercode.dev",
       subject: "CyberCode - Contact Request", 
       html: output 
     };
@@ -161,8 +161,8 @@ app.post('/brief_sent', (req, res) => {
       port: 587,
       secure: false, 
       auth: {
-        user: 'email.com', 
-        pass: 'password' 
+        user: '', 
+        pass: '' 
       },
       tls: {
         rejectUnauthorized:false
@@ -170,8 +170,8 @@ app.post('/brief_sent', (req, res) => {
     });
 
     let mailOptions = {
-      from: '"CyberCode Client Brief" <email.com>', 
-      to: "password",
+      from: '"CyberCode Client Brief" <>', 
+      to: "stephen@cybercode.dev",
       subject: "CyberCode - Client Brief", 
       html: output 
     };

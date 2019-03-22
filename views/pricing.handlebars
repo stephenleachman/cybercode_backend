@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  {{!-- SEO --}}
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136776179-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-136776179-1');
+  </script>
+
+  <meta name="Description" content="Author: A.N. Author,
+    Illustrator: P. Picture, Category: Books, Price: $17.99,
+    Length: 784 pages">
+
   {{!-- Meta --}}
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,11 +42,6 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/public/assets/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="96x96" href="/public/assets/favicon/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/public/assets/favicon/favicon-16x16.png">
-
-  {{!-- SEO --}}
-  <meta name="Description" content="Author: A.N. Author,
-    Illustrator: P. Picture, Category: Books, Price: $17.99,
-    Length: 784 pages">
 
 </head>
 
@@ -86,7 +95,9 @@
         <div class="row d-flex justify-content-center">
           <div class="col-md-12 col-lg-9 col-xl-7 col-12 py-3 text-center">
             <h1 class="text-light display-4 pb-2 animated fadeInDown">Our Pricing</h1>
-            <p class="text-light lead animated fadeIn">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus neque iusto magni a vero, nesciunt voluptas optio. Asperiores, libero aspernatur?</p>
+            <p class="text-light lead animated fadeIn">
+              We offer competitive pricing making our services ideal for start up‘s too small and medium size companies alike.
+            </p>
             <a href="/get_started" class="btn btn-outline-light ml-4 mt-2 animated fadeInUp" role="button" aria-pressed="true">Git Started<i class="ml-3 fas fa-angle-right"></i></a>
           </div>
         </div>
@@ -120,7 +131,9 @@
               <div class="tab-pane fade show active" id="pricing_static_website" role="tabpanel" aria-labelledby="pricing_static_website_tab">
 
                 <h2><span class="text-info">Static </span>Websites</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae natus blanditiis corporis quis doloribus dignissimos repellendus consequuntur odio iusto quo.</p>
+                <p>
+                  Static websites are ideal for businesses that are looking for brochures style websites for marketing and client communication purposes. 
+                </p>
 
                 {{!-- Website Template --}}
                 <div class="card-deck slick-static-websites mt-5">
@@ -201,7 +214,9 @@
               <div class="tab-pane fade" id="pricing_dynamic_website" role="tabpanel" aria-labelledby="pricing_dynamic_website_tab">
 
                 <h2><span class="text-info">Dynamic </span>Websites</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae natus blanditiis corporis quis doloribus dignissimos repellendus consequuntur odio iusto quo.</p>
+                <p>
+                  Dynamic websites provide a content management system or CMS for short allowing a simple way to update and manage content on the website. 
+                </p>
 
                 {{!-- Website Template --}}
                 <div class="card-deck slick-dynamic-websites mt-5">
@@ -281,7 +296,9 @@
               <div class="tab-pane fade" id="pricing_web_app" role="tabpanel" aria-labelledby="pricing_web_app_tab">
                 <div class="text-center">
                   <h2><span class="text-info">Web </span>Applications</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae natus blanditiis corporis quis doloribus dignissimos repellendus consequuntur odio iusto quo.</p>
+                  <p class="mx-lg-5 px-lg-5">
+                    Do to the complexity of building an application and every client’s specific needs, we are unable to set a fixed price for this service. If you have a project in mind, please fill out a project brief and we will send an estimate with 48 hours.
+                  </p>
                   <a href="/get_started" class="btn btn-info text-light mt-2 mt-4" role="button" aria-pressed="true">Git Started</a>
                 </div>
               </div>
@@ -290,7 +307,9 @@
               <div class="tab-pane fade" id="pricing_other_services" role="tabpanel" aria-labelledby="pricing_other_services_tab">
 
                 <h2><span class="text-info">Other </span>Services</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae natus blanditiis corporis quis doloribus dignissimos repellendus consequuntur odio iusto quo.</p>
+                <p>
+                  We offer a variety of other related services such as hosting, website Maintenance and training.
+                </p>
 
                 {{!-- Website Template --}}
                 <div class="card-deck slick-other-services mt-5">

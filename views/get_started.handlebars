@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  {{!-- SEO --}}
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136776179-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-136776179-1');
+  </script>
+
+  <meta name="Description" content="Author: A.N. Author,
+    Illustrator: P. Picture, Category: Books, Price: $17.99,
+    Length: 784 pages">
+    
   {{!-- Meta --}}
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,11 +41,6 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/public/assets/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="96x96" href="/public/assets/favicon/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/public/assets/favicon/favicon-16x16.png">
-
-  {{!-- SEO --}}
-  <meta name="Description" content="Author: A.N. Author,
-    Illustrator: P. Picture, Category: Books, Price: $17.99,
-    Length: 784 pages">
 
 </head>
 
@@ -85,7 +94,9 @@
         <div class="row d-flex justify-content-center">
           <div class="col-md-12 col-lg-9 col-xl-7 col-12 py-3 text-center">
             <h1 class="text-light display-4 pb-2 animated fadeInDown">Get Started</h1>
-            <p class="text-light lead  animated fadeIn">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus neque iusto magni a vero, nesciunt voluptas optio. Asperiores, libero aspernatur?</p>
+            <p class="text-light lead  animated fadeIn">
+              To get started just fill out the project brief form below, or you can download the PDF version and send it in via email. Please allow 48 hours for us to review and respond with the details.
+            </p>
             <a href="/get_started" class="btn btn-outline-light ml-4 mt-2 animated fadeInUp" role="button" aria-pressed="true">Download client brief</a>
           </div>
         </div>
@@ -104,7 +115,9 @@
               <div class="card mt-4 shadow animated fadeInUp">
                 <div class="card-body">
                   <h4 class="text-center animated fadeIn mt-3"><span class="number-1 h2 text-info font-weight-bold">1</span> Tell Us About Your <span>Business</span></h4>
-                  <p class="text-center animated fadeIn pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic aut incidunt cumque voluptatem ipsam quisquam!</p>
+                  <p class="text-center animated fadeIn pb-4">
+                    Start by telling us a bit about your company, this will help us tailor your new project around your business.
+                  </p>
                   {{!-- Clients Name --}}
                   <div class="form-group mt-2">
                     <label for="name">Your Name <span class="text-info">*</span></label>
@@ -189,7 +202,9 @@
               <div class="card mt-4 shadow animated fadeInUp">
                 <div class="card-body">
                   <h4 class="text-center animated fadeIn mt-3"><span class="number-2 h2 text-info font-weight-bold">2</span> Tell Us About Your <span>Project</span></h4>
-                  <p class="text-center animated fadeIn pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique possimus quas libero, vitae cum fugit.</p>
+                  <p class="text-center animated fadeIn pb-4">
+                    Fill out the details of your project. Please try to provide as much as passable, this will help us write your project scope.
+                  </p>
                   {{!-  Project Name --}}
                   <div class="form-group mt-2">
                     <label for="projectName">Project Name <span class="text-info">*</span></label>

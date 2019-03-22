@@ -3,22 +3,23 @@ $(document).ready(function(){
 
   $('.slick-static-websites').slick({
     infinite: false,
-    slidesToShow: 3,
+    slidesToShow: 3 ,
     slidesToScroll: 1,
     arrows: true,
+    draggable: false,
     nextArrow: '<button class="slick-next"><i class="fas fa-arrow-right"></i></button>',
     prevArrow: '<button class="slick-prev"><i class="fas fa-arrow-left"></i></button>',
     responsive: [
       {
         breakpoint: 1200,
         settings: {
-          slidesToShow: 2
+        slidesToShow: 2
         }
       },
       {
         breakpoint: 800,
         settings: {
-          slidesToShow: 1
+        slidesToShow: 1
         }
       }
     ]
@@ -30,19 +31,20 @@ $(document).ready(function(){
     slidesToShow: 3,
     slidesToScroll: 1,  
     arrows: true,
+    draggable: false,
     nextArrow: '<button class="slick-next"><i class="fas fa-arrow-right"></i></button>',
     prevArrow: '<button class="slick-prev"><i class="fas fa-arrow-left"></i></button>',
     responsive: [
       {
         breakpoint: 1200,
         settings: {
-          slidesToShow: 2
+        slidesToShow: 2
         }
       },
       {
         breakpoint: 800,
         settings: {
-          slidesToShow: 1
+        slidesToShow: 1
         }
       }
     ]
@@ -54,6 +56,7 @@ $(document).ready(function(){
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: true,
+    draggable: false,
     nextArrow: '<button class="slick-next"><i class="fas fa-arrow-right"></i></button>',
     prevArrow: '<button class="slick-prev"><i class="fas fa-arrow-left"></i></button>',
     responsive: [
