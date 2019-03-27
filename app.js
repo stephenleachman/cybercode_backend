@@ -1,10 +1,32 @@
+// const http = require('http');
+// const https = require('https');
 const express = require('express');
 const bodyParser = require('body-parser');
 const exphbs = require('express-handlebars');
 const path = require('path');
 const nodemailer = require('nodemailer');
 
+// 
+// const fs = require('fs');
+
+// const httpsOptions = {
+//   cert: fs.readFileSync('ssl/cybercode_dev.crt'),
+//   ca: fs.readFileSync('ssl/cybercode_dev.ca-bundle'),
+//   key: fs.readFileSync('ssl/cybercode_dev.key')
+// };
+
+
 const app = express();
+
+// const httpServer = http.createServer(app);
+// const httpsServer = https.createServer(httpsOptions, app);
+
+// app.use((req, res, next) => {
+//   if(req.protocol === 'http') {
+//      res.redirect(301, `https://${req.headers.host}${req.url}`);
+//    }
+//    next();
+// });
 
 // Vew Engine Setup
 app.engine('handlebars', exphbs());
@@ -26,7 +48,6 @@ app.get('/', (req, res) => {
 app.get('/pricing', (req, res) => {
   res.render('pricing');
 });
-
 
 app.get('/contact', (req, res) => {
   res.render('contact');
@@ -188,5 +209,6 @@ app.post('/brief_sent', (req, res) => {
 
 
 
-
-app.listen(5000, () => console.log('Server Started...'));
+// httpServer.listen(80, 'cybercode.dev');
+// httpsServer.listen(443, 'cybercode.dev');
+app.listen(3000, () => console.log('Server Started...'));

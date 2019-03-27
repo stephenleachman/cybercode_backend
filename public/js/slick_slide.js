@@ -7,6 +7,8 @@ $(document).ready(function(){
     slidesToScroll: 1,
     arrows: true,
     draggable: false,
+    swipe: false,
+    accessibility:  true,
     nextArrow: '<button class="slick-next"><i class="fas fa-arrow-right"></i></button>',
     prevArrow: '<button class="slick-prev"><i class="fas fa-arrow-left"></i></button>',
     responsive: [
@@ -32,6 +34,8 @@ $(document).ready(function(){
     slidesToScroll: 1,  
     arrows: true,
     draggable: false,
+    swipe: false,
+    accessibility:  true,
     nextArrow: '<button class="slick-next"><i class="fas fa-arrow-right"></i></button>',
     prevArrow: '<button class="slick-prev"><i class="fas fa-arrow-left"></i></button>',
     responsive: [
@@ -57,6 +61,8 @@ $(document).ready(function(){
     slidesToScroll: 1,
     arrows: true,
     draggable: false,
+    swipe: false,
+    accessibility:  true,
     nextArrow: '<button class="slick-next"><i class="fas fa-arrow-right"></i></button>',
     prevArrow: '<button class="slick-prev"><i class="fas fa-arrow-left"></i></button>',
     responsive: [
